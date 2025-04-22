@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#generate-pdf {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#generate-pdf:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#table-container {
+    width: 90%;
+    max-width: 1000px; /* Adjust as needed */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; /* Ensures equal column widths */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    height: 35px; /* Adjust cell height as needed */
+    overflow: hidden; /* Hide overflow if content is too large */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Optional: Add some hover effect */
+td:hover {
+    background-color: #f0f0f0;
+    cursor: default;
+}
+
+/* Style empty cells differently if desired */
+td:empty {
+   /* background-color: #fafafa; */ /* Example */
+}
